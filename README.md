@@ -324,7 +324,8 @@ Now that all microservices have been containerized, you will use Docker Compose 
 
 #### Step 3.1. Create a docker-compose.yml file
 In the root directory of your project (at the same level as the `order-service`, `product-service`, and `store-front` directories), create a `docker-compose.yml` file:
-  ```
+
+```
 # Specifies the version of Docker Compose format being used
 version: '3'
 
@@ -385,7 +386,7 @@ services:
     depends_on:
       - product-service
       - order-service
-  ```
+```
 
 #### Step 3.2. Run the application using Docker Compose
 
